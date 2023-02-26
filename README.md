@@ -2,30 +2,30 @@
 
 Microservice that is responsible for sending emails to users.
 
-# Konfiguracja aplikacji
+# Application config
 
-## Konfiguracja poczty
+## Email config
 
-Aby skonfigurować pocztę, należy ustawić następujące właściwości w pliku `application.properties`:
+To configure email sending, you need to provide the following parameters in the `application.properties` file:
 
-- `spring.mail.host`: adres hosta poczty
-- `spring.mail.port`: numer portu serwera poczty
-- `spring.mail.username`: nazwa użytkownika do logowania
-- `spring.mail.password`: hasło użytkownika do logowania
+- `spring.mail.host`: the mail host address
+- `spring.mail.port`: the port number of the mail server
+- `spring.mail.username`: the username for logging in
+- `spring.mail.password`: the password for logging in
 
-## Konfiguracja bazy danych
+## Database config
 
-Aby skonfigurować bazę danych H2, należy ustawić następujące właściwości w pliku `application.properties`:
+To configure the H2 database, the following properties should be set in the `application.properties` file:
 
-- `spring.datasource.url`: adres URL bazy danych
-- `spring.datasource.username`: nazwa użytkownika bazy danych
-- `spring.datasource.password`: hasło użytkownika bazy danych
-- `spring.h2.console.path`: sciezka bazy danych
+- `spring.datasource.url`: the database URL address
+- `spring.datasource.username`: the database username
+- `spring.datasource.password`: the database user password
+- `spring.h2.console.path`: the database driver class name
 
-##Dane
+## Database data
 
-Dane testowe są wprowadzone w pliku `import.sql`.
+The data for the database is entered in the `import.sql` file.
 
-## Pliki z logami
+## Log files
 
-Pliki z logami znajdują się w folderze `logs`.
+Log files are located in the `logs` folder.
